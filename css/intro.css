@@ -1,0 +1,252 @@
+* { margin: 0; padding: 0;}
+body { font-family: 'Nanum Gothic', sans-serif; }
+li {
+    list-style-type: none;
+}
+a { text-decoration: none;}
+
+/* header */
+#main_header {
+    width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+#main_header > h1 {
+    position: absolute;
+}
+
+#main_header > h1 a {
+    color: #1f65d5;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 800;
+}
+#main_header > button {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    background: #000;
+    right: 50px;
+    border: none;
+    overflow: hidden;
+}
+#main_header > button a:hover {
+    background: rgba(31,101,213, 0.5);
+}
+#main_header > button a {
+    color: #fff;
+    background: #333;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.4s;
+}
+.slider > div {
+    width: 1900px;
+    height: 800px;
+    overflow: hidden;
+}
+.slider > div img {
+    position: absolute;
+    width: 100%;
+}
+.bx-wrapper {
+    border: none;
+    box-shadow: none;
+}
+
+/* gnb */
+#main_gnb {
+    width: 800px;
+    position: absolute;
+    left: 30%; top: 35px;
+    z-index: 99999;
+}
+#main_gnb > .depth1 > li {
+    width: 150px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+}
+#main_gnb > .depth1 > li a {
+    color: #333;
+    text-transform: uppercase;
+    display: block;
+}
+#main_gnb > .depth1 > li > .depth2 {
+    background: rgba(51, 51, 51, 0.5);
+    margin-top: 25px;
+}
+#main_gnb > .depth1 > li > .depth2 > li {
+    display: block;
+}
+#main_gnb > .depth1 > li > .depth2 > li a {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.depth2 > li:first-child a {   
+    padding-top: 20px;
+}
+#main_gnb > .depth1 > li > .depth2 > li:hover a {
+    color: #6aa3ff;
+}
+
+
+/* content */
+#content {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    height: 1200px;
+}
+#content > h2 {
+    margin-top: 150px;
+    text-align: center;
+}
+#content > .special_bg {
+    background: url('./images/content_visual.png') 0 0 no-repeat fixed;
+    height: 950px;
+    overflow: hidden;
+}
+#content > .special_bg > .left {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 1430px;
+    left: 200px;
+    float: left;
+    z-index: 9999;
+}
+.special_bg > .left > a {
+    position: absolute;
+    overflow: hidden;
+}
+#content > .special_bg > .right {
+    margin-left: 1001px;
+    margin-top: 210px;
+    width: 550px;
+    height: 500px;
+}
+#content > .special_bg > .right > .text > ul {
+    position: absolute;
+    width: 650px;
+}
+#content > .special_bg > .right > .text > ul > li {
+    font-weight: 700;
+}
+#content > .special_bg > .right > .text > ul > li h1 {
+    margin-bottom: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+#content > .special_bg > .right > .text > ul > .info {
+    text-align: left;
+    color: #000;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.right > .title a {
+    width: 200px;
+    font-size: 17px;
+    line-height: 40px;
+    color: rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s;
+    right: -30px;
+    top: 180px;
+    text-align: right;
+    font-weight: 700;
+    display: block;
+}
+.right > .title a:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: -27%;
+}
+.right > .title a:hover {
+    color: #000;
+}
+.right > .title a:hover:after {
+    color: #000;
+    width: 265px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in
+}
+.right > .title a.selected {
+    color: #000;
+}
+
+/* footer */
+#main_footer {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-top: 10px;
+       
+    }
+    #main_footer > .container {
+        width: 1440px;
+        height: 150px;
+        margin: 0 auto;
+        /* border: 1px solid blue; */
+    }
+    #main_footer > .container > .logo {
+        float: left;
+        margin-top: 100px;
+        padding-left: 450px;
+        color: #444;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 800;
+    }
+    #main_footer > .container > .number {
+       margin-top: 100px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #444;
+        float: left;
+    }
+    #main_footer > .container > div {
+        float: left;
+    }
+    #main_footer > .container > .top_arrow {
+        float: right;
+     
+        margin-top: 95px;
+    }
+    #main_footer > .company {
+        width: 100%;
+        height: 250px;
+        border-top: 1px solid #333;
+    }
+    #main_footer > .company > p {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    #main_footer > .company > .f_info {
+        margin-top: 60px;
+    }
+    #main_footer > .company > .copy {
+        margin-top: 30px;
+    }
+    #main_footer > .company > .copy a {
+        color: #666;
+        font-size: 12px;
+    }
